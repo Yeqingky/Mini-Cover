@@ -19,10 +19,6 @@
       <a href="https://bsgun.cn" 
          target="_blank"
          class="font-bold text-green-600 hover:text-gray-600 transition-colors">梦爱吃鱼</a>
-      <a v-if="icpNumber" 
-         href="https://beian.miit.gov.cn/" 
-         target="_blank"
-         class="font-bold text-green-600 hover:text-gray-600 transition-colors">{{ icpNumber }}</a>
       <button class="text-pink-500 font-bold" @click="toggleTips">小提示</button>
     </div>
     
@@ -47,8 +43,7 @@
 export default {
   data() {
     return {
-      showTipsPopup: false,
-      icpNumber: import.meta.env.VITE_APP_ICP_NUMBER
+      showTipsPopup: false
     };
   },
   methods: {
